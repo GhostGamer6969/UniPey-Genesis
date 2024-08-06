@@ -41,13 +41,13 @@ Find the start the tutorial here:
 Clone the repository:
 
 ```bash
-git clone https://github.com/GhostGamer6969/UniPe.git
+git clone https://github.com/GhostGamer6969/HACKINDIA-SPARK-2-GENESIS.git
 ```
 
 Change into the repository app:
 
 ```bash
-cd UniPe
+cd HACKINDIA-SPARK-2-GENESIS
 ```
 
 Install dependencies and start the development server.
