@@ -7,7 +7,7 @@ import { fetchAssets } from '$lib/utils/stellarExpert'
 /**
  * @module $lib/utils/devHelpers
  * @description A collection of helpful functions to get an account up and
- * running for use with UniPe: Functions to help fill out a contact list, add
+ * running for use with UniPey: Functions to help fill out a contact list, add
  * lumens to an account, and nuking the whole account, etc.
  */
 
@@ -143,7 +143,7 @@ export async function mergeFriendbotAccount(publicKey) {
 }
 
 /**
- * Clear out UniPe's localStorage entries, effectively "deleting the user's account."
+ * Clear out UniPey's localStorage entries, effectively "deleting the user's account."
  * @function nukeLocalStorage
  */
 export function nukeLocalStorage() {

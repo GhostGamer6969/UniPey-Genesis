@@ -2,11 +2,11 @@
 @component
 
 The `/dashboard/settings/dev` page will allow developer to quickly get their
-"profile" into a useable state for experimenting with UniPe and with the
+"profile" into a useable state for experimenting with UniPey and with the
 testnet. Utilities are available to access their Stellar public/secret keys,
 populate the contacts list (optionally funding the accounts and adding various
 trustlines to them), empty the contacts list, receive more testnet funding from
-friendbot, and completely erase all the `localStorage` we have for UniPe and
+friendbot, and completely erase all the `localStorage` we have for UniPey and
 start fresh.
 -->
 
@@ -49,10 +49,10 @@ start fresh.
 <h1>Dev Helpers</h1>
 <p>
     The <code>/dashboard/settings/dev</code> page will allow developer to quickly get their "profile"
-    into a useable state for experimenting with UniPe and with the testnet. Utilities are available
+    into a useable state for experimenting with UniPey and with the testnet. Utilities are available
     to access their Stellar public/secret keys, populate the contacts list (optionally funding the accounts
     and adding various trustlines to them), empty the contacts list, receive more testnet funding from
-    friendbot, and completely erase all the `localStorage` we have for UniPe and start fresh.
+    friendbot, and completely erase all the `localStorage` we have for UniPey and start fresh.
 </p>
 
 <h2>Keypair Information</h2>
@@ -126,5 +126,5 @@ start fresh.
 <button class="btn-primary btn" on:click={displayModal}>svelte-simple-modal</button>
 
 <h2>Throw it On the Ground!</h2>
-<p>Tired of your UniPe setup? Nuke the whole gosh-darn thing!</p>
+<p>Tired of your UniPey setup? Nuke the whole gosh-darn thing!</p>
 <button class="btn-error btn" on:click={nukeLocalStorage}>You can't buy me hot dog man!</button>

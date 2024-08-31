@@ -2,7 +2,7 @@
 <div class="hero min-h-screen bg-base-200">
     <div class="hero-content text-center">
         <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Welcome to UniPe!</h1>
+            <h1 class="text-5xl font-bold">Welcome to UniPey!</h1>
             <p class="py-6">The app that lets you pay, <em>basically</em>, anyone.</p>
             <!-- These SvelteKit preload attributes keep the redirects from firing when the user hovers over the button -->
             <div data-sveltekit-preload-data="tap" data-sveltekit-preload-code="hover">

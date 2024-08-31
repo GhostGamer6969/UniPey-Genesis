@@ -1,29 +1,27 @@
-# UniPe <!-- omit in toc -->
+# UniPey <!-- omit in toc -->
 
 > The app that lets you pay, _basically_, anyone.
 
 An example payments application demonstrating integrations of various Stellar
 features and SEPs in a user-facing product.
 
-> :warning: **CAUTION:** Although UniPe is a full-fledged application on
+> :warning: **CAUTION:** Although UniPey is a full-fledged application on
 > Stellar's Testnet, it has been built solely to showcase Stellar functionality
 > for the educational purposes of this tutorial, not to be copied, pasted, and
 > used on Mainnet.
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Companion App](#companion-app)
-- [Companion Tutorial](#companion-tutorial)
-- [Development Instructions](#development-instructions)
-- [Where to Start in this Repository?](#where-to-start-in-this-repository)
-  - [Stellar](#stellar)
-    - [SEPs](#seps)
-    - [Other Stellar Functionality](#other-stellar-functionality)
-  - [SvelteKit](#sveltekit)
-    - [Pages and Routes](#pages-and-routes)
-    - [Stores](#stores)
-
-
+-   [Companion App](#companion-app)
+-   [Companion Tutorial](#companion-tutorial)
+-   [Development Instructions](#development-instructions)
+-   [Where to Start in this Repository?](#where-to-start-in-this-repository)
+    -   [Stellar](#stellar)
+        -   [SEPs](#seps)
+        -   [Other Stellar Functionality](#other-stellar-functionality)
+    -   [SvelteKit](#sveltekit)
+        -   [Pages and Routes](#pages-and-routes)
+        -   [Stores](#stores)
 
 ## Companion Tutorial
 
@@ -79,9 +77,9 @@ Ecosystem Proposals). These interactions are coded in the
 
 More generic Stellar functionality are located in the same directory:
 
-- `/src/lib/stellar/horizonQueries.js` for querying information from the network
-- `/src/lib/stellar/transactions.js` for building different kinds of Stelar
-  transactions
+-   `/src/lib/stellar/horizonQueries.js` for querying information from the network
+-   `/src/lib/stellar/transactions.js` for building different kinds of Stelar
+    transactions
 
 ### SvelteKit
 

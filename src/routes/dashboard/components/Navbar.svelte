@@ -24,7 +24,7 @@ More information about SEP-33 can be found here:
         ><MenuIcon size="24" /></label
     >
     <div class="flex-1">
-        <a href="/dashboard" class="btn-ghost btn text-xl normal-case">UniPe</a>
+        <a href="/dashboard" class="btn-ghost btn text-xl normal-case">UniPey</a>
     </div>
     <div class="flex-none">
         <div class="dropdown-end dropdown">

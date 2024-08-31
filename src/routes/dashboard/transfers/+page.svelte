@@ -321,11 +321,11 @@ couple read-throughs to understand everything.
 </p>
 <p>
     <strong>SEP-6</strong> provides a <em>programmatic</em> method of interacting with the anchor
-    server. The entire flow to initiate a transfer is handled here, in <em>UniPe</em>.
+    server. The entire flow to initiate a transfer is handled here, in <em>UniPey</em>.
 </p>
 <p>
     <strong>SEP-24</strong> provides an <em>interactive</em> method of utilizing the anchor server.
-    The flow begins here in <em>UniPe</em>, but the user is handed over to the anchor server for
+    The flow begins here in <em>UniPey</em>, but the user is handed over to the anchor server for
     most of the transfer initiation.
 </p>
 
