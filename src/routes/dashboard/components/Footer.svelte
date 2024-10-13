@@ -27,7 +27,7 @@ can be found.
     <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <ul class="menu">
             <li>
-                <a href="https://github.com/GhostGamer6969/UniPey" target="_blank">
+                <a href="https://github.com/GhostGamer6969/Celeriz" target="_blank">
                     <GithubIcon size="16" />
                     GitHub
                 </a>

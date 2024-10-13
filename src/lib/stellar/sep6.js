@@ -6,7 +6,7 @@ import { error } from '@sveltejs/kit'
  * @description A collection of functions that make it easier to work with SEP-6
  * transfer servers. These transfers are intended to be _programmatic_, meaning
  * the user never has to directly interact with the anchor server. Everything is
- * done inside our own UniPey application.
+ * done inside our own Celeriz application.
  */
 
 /**

@@ -6,7 +6,7 @@ import { error } from '@sveltejs/kit'
  * @description A collection of functions to make it easier to work with SEP-24
  * transfer servers to connect the user with the Anchor's hosted endpoint to
  * initiate and/or track those transfers. These transfers are intended to be
- * _interactive_, meaning the user leaves the UniPey application, and directly
+ * _interactive_, meaning the user leaves the Celeriz application, and directly
  * initiates a transfer using the Anchor's infrastructure.
  */
 

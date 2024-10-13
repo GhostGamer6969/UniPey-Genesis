@@ -1,11 +1,11 @@
-# UniPey <!-- omit in toc -->
+# Celeriz <!-- omit in toc -->
 
 > The app that lets you pay, _basically_, anyone.
 
 An example payments application demonstrating integrations of various Stellar
 features and SEPs in a user-facing product.
 
-> :warning: **CAUTION:** Although UniPey is a full-fledged application on
+> :warning: **CAUTION:** Although Celeriz is a full-fledged application on
 > Stellar's Testnet, it has been built solely to showcase Stellar functionality
 > for the educational purposes of this tutorial, not to be copied, pasted, and
 > used on Mainnet.
