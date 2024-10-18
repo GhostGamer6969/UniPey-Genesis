@@ -1,99 +1,164 @@
-# Celeriz <!-- omit in toc -->
+# CeleriZ
 
-> The app that lets you pay, _basically_, anyone.
+CeleriZ is a modern cross-border payments platform that allows users to send and receive money seamlessly across countries. Built with a focus on user experience, security, and low transaction fees, CeleriZ uses **Swift** for the iOS app and **Stellar Blockchain** for fast, low-cost backend transactions.
 
-An example payments application demonstrating integrations of various Stellar
-features and SEPs in a user-facing product.
+Demo video- https://youtube.com/shorts/E-9n81Q9AyU?si=A3-7nQlkaXiIlISo
 
-> :warning: **CAUTION:** Although Celeriz is a full-fledged application on
-> Stellar's Testnet, it has been built solely to showcase Stellar functionality
-> for the educational purposes of this tutorial, not to be copied, pasted, and
-> used on Mainnet.
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Installation](#installation)
+  - [iOS App](#ios-app)
+  - [Backend (Stellar)](#backend-stellar)
+- [Usage](#usage)
+- [Environment Setup](#environment-setup)
+- [License](#license)
 
-## Table of Contents <!-- omit in toc -->
+---
 
--   [Companion App](#companion-app)
--   [Companion Tutorial](#companion-tutorial)
--   [Development Instructions](#development-instructions)
--   [Where to Start in this Repository?](#where-to-start-in-this-repository)
-    -   [Stellar](#stellar)
-        -   [SEPs](#seps)
-        -   [Other Stellar Functionality](#other-stellar-functionality)
-    -   [SvelteKit](#sveltekit)
-        -   [Pages and Routes](#pages-and-routes)
-        -   [Stores](#stores)
+## Features
 
-## Companion Tutorial
+- **Cross-Border Payments:** Seamlessly send and receive money across different countries with minimal fees.
+- **Swift iOS App:** An intuitive user interface built using Swift and SwiftUI.
+- **Stellar Blockchain:** Uses the Stellar blockchain for secure, fast, and cost-effective transactions.
+- **USDC Integration:** All fiat currencies are converted into USDC for uniform cross-border transactions.
+- **Decoy Pricing Tiers:** Three-tier system for users, including a premium experience.
+- **Modern Design:** Blends elements of luxury and youth-centric experience, targeting modern users.
 
-This application was built to coincide with a written tutorial, located in the
-Stellar documentation. This tutorial is a "nearly comprehensive" guide to
-building the features in this app. Following along with the tutorial and this
-source code repository, you can get a solid understanding of building an
-application on the Stellar network.
+---
 
-Find the start the tutorial here:
-<https://developers.stellar.org/docs/building-apps/example-application-tutorial/overview>
+## Tech Stack
 
-## Development Instructions
+**Frontend:**
+- Swift 5
+- SwiftUI
+- Combine Framework
 
-Clone the repository:
+**Backend:**
+- Stellar Blockchain
+- USDC stablecoin integration
+- Circle API for fiat conversion
+- Horizon API for interacting with the Stellar network
 
-```bash
-git clone https://github.com/GhostGamer6969/HACKINDIA-SPARK-2-GENESIS.git
-```
+**Others:**
+- Stellar SDK for Swift
+- Keychain for secure user data storage
+- Xcode 15 or later
 
-Change into the repository app:
+---
 
-```bash
-cd HACKINDIA-SPARK-2-GENESIS
-```
+## Architecture
 
-Install dependencies and start the development server.
+CeleriZ follows a modular, decentralized architecture:
 
-```bash
-yarn install
-yarn dev
-```
+1. **Frontend (iOS):** 
+    - The iOS app built with Swift and SwiftUI serves as the user interface. Users can create accounts, manage wallets, send and receive payments, and view transaction history.
+    
+2. **Backend (Stellar Blockchain):**
+    - Stellar blockchain handles the backend transactions. Every transaction on the app is processed through the Stellar network, leveraging its speed and low fees.
+    - The Stellar SDK is used to generate wallets, create and sign transactions, and interact with the Horizon API.
+    - Fiat currencies are converted into USDC, allowing global users to send and receive money in a stable digital format.
+    
+3. **APIs:**
+    - Circle API: Manages fiat-to-USDC conversions.
+    - Stellar Horizon API: Facilitates communication with the Stellar network for transaction queries, account details, and operations.
 
-You can now visit the local development site in your browser at
-<http://localhost:5173>
+---
 
-## Where to Start in this Repository?
+## Installation
 
-We've worked to document everything in this repo, so start exploring wherever
-you like. We'd suggest looking into the following areas:
+### iOS App
 
-### Stellar
+1. **Requirements**
+   - Xcode 15+
+   - macOS 13+ (Ventura or later)
+   - Swift 5
 
-The heart and soul of this application is interacting with the Stellar network.
+2. **Setup**
+   1. Clone the repository:
+      ```bash
+      git clone https://github.com/yourusername/CeleriZ-iOS.git
+      cd CeleriZ-iOS
+      ```
 
-#### SEPs
+   2. Install dependencies via CocoaPods or Swift Package Manager (if needed):
+      ```bash
+      pod install
+      ```
 
-Most of the Stellar interactions take place through the use of SEPs (Stellar
-Ecosystem Proposals). These interactions are coded in the
-`/src/lib/stellar/sep*.js` files.
+   3. Open the `.xcworkspace` file in Xcode:
+      ```bash
+      open CeleriZ.xcworkspace
+      ```
 
-#### Other Stellar Functionality
+   4. Configure the API keys for Circle and Stellar SDK in the `Config.swift` file.
 
-More generic Stellar functionality are located in the same directory:
+   5. Build and run the app on the simulator or device.
 
--   `/src/lib/stellar/horizonQueries.js` for querying information from the network
--   `/src/lib/stellar/transactions.js` for building different kinds of Stelar
-    transactions
+### Backend (Stellar)
 
-### SvelteKit
+1. **Requirements**
+   - Stellar SDK for Swift
+   - Horizon API access
+   - Circle API access for fiat conversion
 
-This application is built using SvelteKit. We don't want to make this much of a
-"SvelteKit Tutorial," but here's what you may want to explore:
+2. **Setup**
+   1. Install the Stellar SDK for Swift via CocoaPods or Swift Package Manager:
+      ```bash
+      pod 'stellar-sdk'
+      ```
 
-#### Pages and Routes
+   2. Set up the Circle API for fiat conversions. Add the Circle API Key in the environment:
+      ```bash
+      export CIRCLE_API_KEY=your-api-key-here
+      ```
 
-We primarily use SvelteKit for its routing capability. You can begin exploring
-the SvelteKit components by reading the comments in the
-`/src/routes/dashboard/+page.svelte` file.
+   3. Install and configure the Horizon API access:
+      - Horizon can be accessed via Stellar's public instance: `https://horizon.stellar.org`
 
-#### Stores
+   4. Set up a Stellar test account or fund your wallet for live transactions:
+      - Use the Stellar laboratory (https://www.stellar.org/laboratory/) to generate keys, fund test accounts, and submit transactions.
 
-We also have implemented a few custom stores to keep track of contact names and
-addresses, user KYC information, a list of anchor transfers, etc. A good place
-to start exploring these stores is the `/src/lib/stores/contactsStore.js` file.
+---
+
+## Usage
+
+1. **Register an Account**: Create a new user account, which generates a Stellar wallet for you.
+2. **Add Funds**: Use Circle to convert your fiat currency into USDC.
+3. **Send Money**: Use the app to send USDC to another user, either via their email or wallet address.
+4. **Receive Money**: Receive USDC directly into your Stellar wallet.
+5. **Transaction History**: View all completed transactions on the app in real-time using the Stellar Horizon API.
+
+---
+
+## Environment Setup
+
+1. **API Keys:**
+   - Circle API: Used for fiat to USDC conversion.
+   - Stellar Horizon API: Used for querying accounts, sending and receiving funds.
+
+   Configure them in your `Config.swift` file:
+   ```swift
+   let CIRCLE_API_KEY = "your-circle-api-key"
+   let STELLAR_HORIZON_URL = "https://horizon.stellar.org"
+   ```
+
+2. **Stellar Network Configuration:**
+   - Use the Stellar SDK to configure your transactions.
+   - To test, switch to Stellar testnet:
+     ```swift
+     StellarSDK(usingTestnet: true)
+     ```
+
+3. **Firebase (Optional)**: For user authentication and push notifications, integrate Firebase if required.
+
+---
+
+## License
+
+CeleriZ is a proprietary project and is not open-source. All rights reserved.
+
+---
+
+This README file provides a structured overview of the project, the tech stack, and instructions for setting up and running both the Swift iOS app and the Stellar backend.
